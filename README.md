@@ -1,5 +1,4 @@
-# Santander-Customer-Transaction-Prediction
-Work in  Progress
+# Work in  Progress
 
 # Santander Customer Transaction Prediction
 
@@ -31,6 +30,16 @@ The project includes:
 # Dataset
 
 The dataset comes from the Santander Customer Transaction Prediction Kaggle competition and contains anonymized numerical features.
+
+Only the training dataset was used in this project.
+
+The original Kaggle competition test dataset was intentionally not used for leaderboard submissions or competition ranking purposes, since the focus of this project was understanding machine learning workflows, model evaluation, and classification behavior rather than competition performance.
+
+The analysis focused on:
+- model comparison,
+- class imbalance evaluation,
+- threshold behavior,
+- and predictive performance interpretation.
 
 ## Dataset Characteristics
 
@@ -87,6 +96,35 @@ The best XGBoost configuration included:
 
 Future improvements may include:
 - Bayesian optimization
-- Additional feature engineering
+- Additional feature engineering and exploratory analysis of feature distributions.
+
+---
+
+# XGBoost Results
+
+## ROC Curve
+
+![ROC Curve](images/roc_curve_xgboost.png)
+
+The XGBoost model achieved a ROC-AUC score of approximately 0.876, showing strong ranking capability between positive and negative classes.
+
+---
+
+## Precision-Recall Curve
+
+![PR Curve](images/pr_curve_xgboost.png)
+
+The PR-AUC score of approximately 0.541 highlighted improved minority class detection performance under class imbalance conditions.
+
+---
+
+## Confusion Matrix (Threshold = 0.5)
+
+![Confusion Matrix](images/confusion_matrix_xgboost.png)
+
+Using the default threshold of 0.5, the model achieved balanced overall performance while remaining relatively conservative in positive class predictions.
+
+---
+
 
 
