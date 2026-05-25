@@ -1,18 +1,8 @@
-# Work in  Progress
-
 # Santander Customer Transaction Prediction
 
-Binary classification project based on the Santander Kaggle competition dataset, focused on predicting whether a customer will make a future transaction using anonymized numerical features.
+Binary classification project based on the Santander Customer Transaction Prediction Kaggle dataset, focused on predicting whether a customer will make a future transaction using anonymized numerical features.
 
-This project was developed for learning and experimentation purposes rather than leaderboard optimization. The main objective was to practice real-world machine learning workflows, model evaluation under class imbalance, hyperparameter optimization, and analytical interpretation of predictive models.
-
-The project includes:
-- Exploratory Data Analysis (EDA)
-- Baseline and ensemble models
-- Hyperparameter optimization with RandomizedSearchCV
-- ROC-AUC and PR-AUC evaluation
-- Threshold analysis and classification tradeoffs
-- Model comparison between Logistic Regression, Random Forest and XGBoost
+The project explores end-to-end machine learning workflows including exploratory data analysis, class imbalance handling, model evaluation, hyperparameter optimization, and predictive performance analysis using Logistic Regression, Random Forest, and XGBoost.
 
 ---
 
@@ -47,9 +37,24 @@ The analysis focused on:
 - Binary target variable
 - Imbalanced dataset
 - No missing values detected
-- Large tabular dataset focused on binary classification
+- Tabular dataset focused on binary classification
 
 The official competition metric was ROC-AUC.
+
+---
+
+# Repository Structure
+
+```text
+├── notebooks/
+│   ├── 01_eda.ipynb
+│   ├── 02_logistic_regression.ipynb
+│   ├── 03_random_forest.ipynb
+│   └── 04_xgboost.ipynb
+│
+├── images/
+├── README.md
+```
 
 ---
 
